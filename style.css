@@ -1,40 +1,40 @@
-*{
-    
-    margin: 0px;
-    padding: 0px;
+/* Default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.box{
+.box {
     background-color: rgb(255, 166, 0);
-    height: 400px;
-    width: 100%;
+    min-height: 400px; /* Change height to min-height for responsiveness */
     display: flex;
-}
-.profile-img{
- 
-     margin-left: 400px;
-     margin-top: 100px;
-     height: 300px;
-     
-} 
-.title{
-    margin-top: 170px;
-    margin-left: 100px;
-   
-}
-.title2{
-    margin-left: 90px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.boxBtn {
-     background-color: #e8e8e885;
-     height: 250px;
-    width: 800px;
-    margin-top: 40px;
-    margin-left: 23%;
-    
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
+.profile-img {
+    height: 200px; /* Adjusted height */
+    margin-top: 20px; /* Adjusted margin */
+}
+
+.Details {
+    text-align: center;
+}
+
+.title {
+    margin-top: 20px; /* Adjusted margin */
+}
+
+.boxBtn {
+    background-color: #e8e8e8;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Added gap between buttons */
+}
 
 .btn {
     border-radius: 0;
@@ -42,30 +42,43 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: black;
     background-color: white;
-    margin-top: 60px;
-    margin-left: 70px;
+}
+
+@media (min-width: 768px) {
+    /* Adjustments for medium-sized devices */
+    .box {
+        min-height: 500px;
+    }
     
-}
-
-.img-1{
-    height: 22px;
-    margin-bottom: 5px;
+    .profile-img {
+        height: 250px;
+    }
     
+    .title {
+        margin-top: 50px;
+    }
+    
+    .btn {
+        margin-top: 20px;
+    }
 }
 
-.img-2{
-  height: 30px;
-  margin-left: 50px;
-  
+@media (min-width: 992px) {
+    /* Adjustments for large-sized devices */
+    .box {
+        min-height: 600px;
+    }
+    
+    .profile-img {
+        height: 300px;
+    }
+    
+    .title {
+        margin-top: 100px;
+    }
+    
+    .btn {
+        margin-top: 40px;
+    }
 }
-
-a{
-  text-decoration: none;
- color: white;
-}
-
-
-
-
-  
 
